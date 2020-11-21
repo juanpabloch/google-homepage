@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+    a:hover{
+        text-decoration: underline;
+        color: rgba(78, 78, 78, 0.74);
+    }
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F1F1F1;
+    padding: 15px 30px;
+}
+
+img{
+    width: 100px;
+}
+
+.title{
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 40px;
+}
+
+h1{
+    color: #DB3025;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height:3;
+    letter-spacing: 1px;
+    margin-left: 4%;
+}
+
+article{
+    width: 100%;
+    padding: 0 4%;
+}
+    h2{
+        font-size: 1em;
+        font-weight: 400;
+        grid-column: 1/2;
+        margin-bottom: 30px;
+    }
+    h3{
+        font-size: 1em;
+        font-weight: 500;
+        grid-column: 3/4;
+    }
+
+.titlebox{
+    grid-column: 1/2;
+}
+
+form{
+    text-align: left;
+    font-size: .95em;
+    display: grid;
+    grid-template-columns: 180px 2fr 2fr .05fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+}
+
+@media (max-width:1090px){
+    form{
+        grid-template-columns: 180px 2fr 2fr;
+    }
+}
+@media (max-width:950px){
+    form{
+        grid-template-columns: 180px 2fr .5fr;
+    }
+    .descrip{
+        visibility: hidden;
+    }
+    h3{
+        visibility: hidden;
+    }
+}
+
+p{
+    font-size: .9em;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
+.descrip p{
+    font-size: .75em;
+    margin-bottom: 38px;
+}
+
+.search-bar{
+    width: 95%;
+    min-width: 250px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    line-height: 2;
+    font-size: 1em;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    background-color: #4084F2;
+    padding: 8px 10px;
+    font-size: .8em;
+    border-radius: 2px;
+    color: #FFF;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: .5px;
+    grid-column: 2/3;
+    width: 130px;
+}
+    .btn:hover{
+        /* border: 1px solid rgb(143, 143, 143) */
+        box-shadow: inset 0 0 20px -10px #00000085;
+    }
+
+
+
+    input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
